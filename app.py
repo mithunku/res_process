@@ -234,7 +234,7 @@ def process_resume():
   
     query=str(request.query_string)
     print(query)
-    url = query.split('url=')[1]
+    url = query.split('file=')[1]
     if url.endswith("'"):
         url= url[:-1]
     print(url)
@@ -267,5 +267,5 @@ def process_resume():
 
     return jsonify(resume_data)
 
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
