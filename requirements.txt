@@ -2,7 +2,4 @@ Flask
 Gunicorn
 pymupdf
 requests
-tempfile
-os
-re
-unicodedata
+
